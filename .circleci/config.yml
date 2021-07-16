@@ -22,7 +22,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - attach_workspace:
-          at: /tmp/dir
+          at: ./
       - run: 
           name: print output file
           command: cat output.txt
