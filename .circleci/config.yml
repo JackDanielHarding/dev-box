@@ -14,7 +14,7 @@ jobs:
           name: save to file
           command: echo "hello world" > output.txt
       - persist_to_workspace:
-          root: /
+          root: ./
           paths:
             - output.txt
   print_output_file:
